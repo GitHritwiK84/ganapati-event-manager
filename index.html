@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganapati Event Management</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-flex">
+        <div class="logo"> 𓆩ꨄ︎𓆪 GANPATI <span>EVENTS MANEGEMENT</span></div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1>We Make Your Events Memorable</h1>
+        <p>Traditional values meets modern professional excellence.</p>
+        <a href="#contact" class="btn-gold">Book Your Event</a>
+      </div>
+    </section>
+
+    <section id="about" class="section-padding">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 class="section-title">About Us</h2>
+          <h3>Redefining Celebrations in 2026</h3>
+          <p>
+            Ganapati Event Manager is a new-age event decoration and management brand built to create extraordinary celebrations with a modern vision and cultural touch. We specialize in designing elegant, well-planned events that reflect your personality and traditions. From intimate family functions to grand weddings and corporate gatherings, our team is committed to delivering creativity, quality, and memorable experiences from day one.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="img/SETUP.JPG"
+            alt="Wedding Setup"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-title text-center">Our Premium Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-campground"></i>
+            <h3>Tent Decoration</h3>
+            <p>
+              Grand waterproof tents with premium drapes, silk linings, and
+              traditional motifs.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-holly-berry"></i>
+            <h3> Stage Decoration</h3>
+            <p>
+              Cinematic stage setups featuring exotic floral walls and royal
+              throne seating.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-user-tie"></i>
+            <h3>Waiter Service</h3>
+            <p>
+              Uniformed, professional staff trained in high-end hospitality
+              etiquette.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-camera-retro"></i>
+            <h3>Photography Service</h3>
+            <p>
+              Capturing every smile and ritual with high-definition cinematic
+              photography.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Visual Magic</h2>
+
+
+        <!-- Tent Decoration -->
+        <h3 class="gallery-heading">Tent Decoration</h3>
+        <div class="gallery-grid animate">
+          <img
+            src="img/tent-1.jpeg"
+          />
+          <img
+            src="img/tent-3.jpeg"
+          />
+          <img
+            src="img/tent-4.jpeg"
+          />
+          <img
+            src="img/tent-5.jpeg"
+          />
+        </div>
+
+        <!-- Stage Decoration -->
+        <h3 class="gallery-heading">Stage Decoration</h3>
+        <div class="gallery-grid animate">
+          <img
+            src="img/stage-1.jpeg"
+          <img
+            src="img/stage-2.jpeg"
+          />
+          <img
+            src="img/stage-3.jpeg"
+          />
+          <img
+            src="img/stage-4.jpeg"
+          />
+        </div>
+
+        <!-- Waiter Service -->
+        <h3 class="gallery-heading">Waiter Service</h3>
+        <div class="gallery-grid animate">
+          <img
+            src="img/waiter-1.jpeg"
+          />
+          <img
+            src="img/waiter-2.jpeg"       
+          />
+          <img
+            src="img/waiter-3.jpeg"
+          />
+          <img
+            src="img/waiter-4.jpeg"
+          />
+        </div>
+
+        <!-- Photography Service -->
+        <h3 class="gallery-heading">Photography Service</h3>
+        <div class="gallery-grid animate">
+          <img
+            src="img/pp1.jpg"
+          />
+          <img
+            src="img/pp2.jpg"
+          />
+          <img
+            src="img/pp3.jpg"     
+          />
+          <img
+            src="img/pp4.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-light">
+  <div class="container">
+    <h2 class="section-title text-left">Get In Touch</h2>
+  
+    <div class="contact-wrapper">
+
+      <!-- LEFT : FORM -->
+      <div class="contact-box">
+        <form id="contactForm">
+          <div class="form-group">
+            <label>Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Tell us about your event"
+              required
+            ></textarea>
+          </div>
+
+          <button type="button" class="btn-red" onclick="sendWhatsApp()">Send Message</button>
+
+        </form>
+
+        <div class="contact-info">
+        <p><i class="fas fa-phone"></i> <a href="tel:+916200485392">+91 62004 85392</a></p>
+<p><i class="fas fa-phone"></i> <a href="tel:+917070479914">+91 70704 79914</a></p>
+<p><i class="fas fa-envelope"></i> <a href="mailto:ganapatievents@gmail.com">ganapatievents@gmail.com</a></p>
+
+
+</div>
+
+      </div>
+      
+      <!-- RIGHT ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: MAP -->
+      <div class="map-box">
+        
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7310.32663262595!2d86.17934239046056!3d23.63432159396432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4215abbc35e8b%3A0x569ff12eb417405b!2sJodhadhih%2C%20Chas%2C%20Bokaro%20Steel%20City%2C%20Jharkhand%20827013!5e0!3m2!1sen!2sin!4v1770315521970!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <footer>
+      <div class="container text-center">
+        <h3>Ganapati Event Management</h3>
+        <p>&copy; 2026 All Rights Reserved. Developed by Hritwik Deo</p>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+      <span id="closeBtn">&times;</span>
+      <img id="lightboxImg" />
+    </div>
+    
+    <script>
+function sendWhatsApp() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  if (name === "" || email === "" || message === "") {
+    alert("Please fill all fields");
+    return;
+  }
+
+  var whatsappMessage =
+    "Hello Ganapati Events,%0A%0A" +
+    "Name: " + name + "%0A" +
+    "Email: " + email + "%0A" +
+    "Message: " + message;
+
+  var phoneNumber = "919113303790";
+
+  var url = "https://wa.me/" + phoneNumber + "?text=" + whatsappMessage;
+
+  window.open(url, "_blank");
+}
+</script>
+
+
+    <!-- Floating Call Button -->
+<a href="tel:+916200485392" class="floating-call">
+  <i class="fas fa-phone"></i>
+</a>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
