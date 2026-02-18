@@ -78,3 +78,34 @@ const observer = new IntersectionObserver(entries => {
 });
 
 animatedItems.forEach(item => observer.observe(item));
+
+// WhatsApp Integration
+
+      function sendWhatsApp() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (name === "" || email === "" || message === "") {
+          alert("Please fill all fields");
+          return;
+        }
+
+        var whatsappMessage =
+          "Hello Ganapati Events,%0A%0A" +
+          "Name: " +
+          name +
+          "%0A" +
+          "Email: " +
+          email +
+          "%0A" +
+          "Message: " +
+          message;
+
+        var phoneNumber = "919113303790";
+
+        var url = "https://wa.me/" + phoneNumber + "?text=" + whatsappMessage;
+
+        window.open(url, "_blank");
+      }
+    
