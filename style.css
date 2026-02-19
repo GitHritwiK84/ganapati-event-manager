@@ -532,7 +532,7 @@ footer {
 
 .floating-whatsapp {
   position: fixed;
-  bottom: 90px; /* above call button */
+  bottom: 90px;
   right: 20px;
   background: #25D366;
   color: #fff;
@@ -545,10 +545,61 @@ footer {
   font-size: 28px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   z-index: 999;
-  transition: 0.3s;
+  transition: transform 0.3s;
+  animation: whatsappPulse 2s infinite;
 }
 
 .floating-whatsapp:hover {
-  background: #1ebe5d;
-  transform: scale(1.08);
+  transform: scale(1.1);
+  animation: none;
+}
+
+/* PULSE ANIMATION */
+@keyframes whatsappPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37,211,102,0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(37,211,102,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37,211,102,0);
+  }
+}
+
+.floating-call {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3f48ee;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.3s;
+  animation: callPulse 2s infinite;
+}
+
+.floating-call:hover {
+  transform: scale(1.1);
+  animation: none;
+}
+
+/* CALL PULSE */
+@keyframes callPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(63,72,238,0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(63,72,238,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(63,72,238,0);
+  }
 }
