@@ -29,17 +29,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Reveal animations on scroll (Simple)
-window.addEventListener("scroll", () => {
-  const cards = document.querySelectorAll(".service-card");
-  cards.forEach((card) => {
-    const cardTop = card.getBoundingClientRect().top;
-    if (cardTop < window.innerHeight - 100) {
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
-    }
-  });
-});
 
 // LIGHTBOX SCRIPT
 const images = document.querySelectorAll(".gallery-grid img");
@@ -105,3 +94,20 @@ function sendWhatsApp() {
   // Reset form
   document.getElementById("contactForm").reset();
 }
+// STAGGERED SERVICE CARD ANIMATION
+const serviceCards = document.querySelectorAll(".service-card");
+
+const serviceObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      serviceCards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add("show");
+        }, index * 200); // delay between cards
+      });
+      serviceObserver.disconnect(); // run once
+    }
+  });
+}, { threshold: 0.2 });
+
+serviceObserver.observe(document.querySelector("#services"));

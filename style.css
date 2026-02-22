@@ -104,11 +104,6 @@ h1, h2, h3 {
     background: rgba(0,0,0,0.5);
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    padding-top: 120px;
 }
 
 .hero h1 { font-size: 4rem; margin-bottom: 20px; }
@@ -424,10 +419,7 @@ footer {
   padding-bottom: 80px;
 }
 
-.hero-content {
-  text-align: center;
-  margin-bottom: 40px;
-}
+
 
 @media (max-width: 768px) {
   .hero {
@@ -602,4 +594,15 @@ footer {
   100% {
     box-shadow: 0 0 0 0 rgba(63,72,238,0);
   }
+}
+
+.service-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.service-card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
